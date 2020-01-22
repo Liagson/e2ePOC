@@ -27,8 +27,8 @@ namespace WikipediaTests
             MainPage wikipediaMain = new MainPage(driver, wait);
             wikipediaMain.Load();
 
-            ArtPortalPage wikipediaArtPage = wikipediaMain.MoveToArts();
-            TheArtsPage wikipediaTheArtsPage = wikipediaArtPage.MoveToTheArts();
+            ArtPortalPage artPortalPage = wikipediaMain.MoveToArts();
+            TheArtsPage theArtsPage = artPortalPage.MoveToTheArts();
         }
 
         [TestMethod]
@@ -36,8 +36,8 @@ namespace WikipediaTests
             MainPage wikipediaMain = new MainPage(driver, wait);
             wikipediaMain.Load();
 
-            ArtPortalPage wikipediaArtPage = wikipediaMain.MoveToArts();
-            wikipediaArtPage.Search("Ancient Greece");
+            ArtPortalPage artPortalPage = wikipediaMain.MoveToArts();
+            artPortalPage.Search("Ancient Greece");
 
             IWebElement searchResult = driver.FindElement(By.XPath(AncientGreece.XPATH_TITLE));
         }

@@ -39,7 +39,7 @@ namespace WikipediaTests
             ArtPortalPage artPortalPage = wikipediaMain.MoveToArts();
             artPortalPage.Search("Ancient Greece");
 
-            IWebElement searchResult = driver.FindElement(By.XPath(AncientGreece.XPATH_TITLE));
+            IWebElement searchResult = driver.FindElement(By.XPath(AncientGreecePage.XPATH_TITLE));
         }
 
 

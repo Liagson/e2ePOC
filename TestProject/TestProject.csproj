@@ -54,7 +54,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Constants.cs" />
-    <Compile Include="Wikipedia\Pages\AncientGreece.cs" />
+    <Compile Include="Wikipedia\Pages\AncientGreecePage.cs" />
     <Compile Include="Wikipedia\Pages\TheArtsPage.cs" />
     <Compile Include="Wikipedia\Pages\ArtPortalPage.cs" />
     <Compile Include="Wikipedia\Pages\MainPage.cs" />
